@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hortifruti O Josineles - Frutas, verduras e legumes frescos todos os dias. Qualidade, economia e atendimento de confiança.">
+    <meta name="keywords" content="hortifruti, frutas, verduras, legumes, frescos, qualidade, economia">
+    <meta name="author" content="Hortifruti O Josineles">
+    <title>Hortifruti O Josineles | Frutas, Verduras e Legumes Frescos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap)" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#inicio" class="logo">
+                    <span class="logo-icon">🍎</span>
+                    <div class="logo-text">
+                        <span class="logo-name">HORTIFRUTI</span>
+                        <span class="logo-subtitle">O JOSINELES</span>
+                    </div>
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#inicio" class="nav-link active">Início</a></li>
+                        <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                        <li><a href="#promocoes" class="nav-link">Promoções</a></li>
+                        <li><a href="#receitas" class="nav-link">Receitas</a></li>
+                        <li><a href="#dicas" class="nav-link">Dicas</a></li>
+                        <li><a href="#frases" class="nav-link">Frases Motivacionais</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="[wa.me](https://wa.me/5588981174598)" target="_blank" class="btn btn-whatsapp header-btn">
+                    <span class="whatsapp-icon">📱</span>
+                    Fazer Pedido
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('[images.unsplash.com](https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=1920)')"></div>
+            <div class="hero-slide" style="background-image: url('[images.unsplash.com](https://images.unsplash.com/photo-1573246123716-6b1782bfc499?w=1920)')"></div>
+            <div class="hero-slide" style="background-image: url('[images.unsplash.com](https://images.unsplash.com/photo-1542838132-92c53300491e?w=1920)')"></div>
+            <div class="hero-slide" style="background-image: url('[images.unsplash.com](https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1920)')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up">Alimentos frescos todos os dias para sua família.</h1>
+            <p class="hero-subtitle animate-fade-up">Qualidade, economia e atendimento de confiança.</p>
+            <div class="hero-buttons animate-fade-up">
+                <a href="[wa.me](https://wa.me/5588981174598)" target="_blank" class="btn btn-primary btn-lg">
+                    🟢 Fazer Pedido pelo WhatsApp
+                </a>
+                <a href="#promocoes" class="btn btn-secondary btn-lg">
+                    🟠 Ver Promoções
+                </a>
+            </div>
+        </div>
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🍎</div>
+                    <h3>Produtos Frescos</h3>
+                    <p>Selecionados diariamente para garantir a melhor qualidade</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">💰</div>
+                    <h3>Melhor Preço</h3>
+                    <p>Economia garantida sem abrir mão da qualidade</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Receba seus produtos no conforto da sua casa</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Atendimento</h3>
+                    <p>Equipe dedicada para melhor atender você</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produtos">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Nossos Produtos</h2>
+                <p class="section-subtitle">Frutas, verduras e legumes frescos selecionados especialmente para você</p>
+            </div>
+            
+            <div class="products-filters animate-on-scroll">
+                <div class="search-box">
+                    <input type="text" id="searchProducts" placeholder="Buscar produtos..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="todos">Todos</button>
+                    <button class="filter-btn" data-category="frutas">🍎 Frutas</button>
+                    <button class="filter-btn" data-category="verduras">🥬 Verduras</button>
+                    <button class="filter-btn" data-category="legumes">🥕 Legumes</button>
+                    <button class="filter-btn" data-category="hortalicas">🌽 Hortaliças</button>
+                    <button class="filter-btn" data-category="ovos">🥚 Ovos</button>
+                    <button class="filter-btn" data-category="temperos">🧄 Temperos</button>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Frutas -->
+                <div class="product-card animate-on-scroll" data-category="frutas" data-name="maçã">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400)" alt="Maçã" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🍎 Frutas</span>
+                        <h3 class="product-name">Maçã Gala</h3>
+                        <p class="product-description">Maçãs frescas e crocantes, ideais para consumo in natura</p>
+                        <div class="product-price">R$ 8,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Maçã Gala" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="frutas" data-name="banana">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400)" alt="Banana" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🍎 Frutas</span>
+                        <h3 class="product-name">Banana Prata</h3>
+                        <p class="product-description">Bananas maduras no ponto, doces e nutritivas</p>
+                        <div class="product-price">R$ 5,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Banana Prata" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="frutas" data-name="laranja">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1547514701-42782101795e?w=400)" alt="Laranja" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🍎 Frutas</span>
+                        <h3 class="product-name">Laranja Pêra</h3>
+                        <p class="product-description">Laranjas suculentas, perfeitas para sucos</p>
+                        <div class="product-price">R$ 4,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Laranja Pêra" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="frutas" data-name="morango">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400)" alt="Morango" loading="lazy">
+                        <span class="product-badge">Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🍎 Frutas</span>
+                        <h3 class="product-name">Morango</h3>
+                        <p class="product-description">Morangos frescos e aromáticos</p>
+                        <div class="product-price">R$ 12,99 <span>/bandeja</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Morango" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Verduras -->
+                <div class="product-card animate-on-scroll" data-category="verduras" data-name="alface">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=400)" alt="Alface" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥬 Verduras</span>
+                        <h3 class="product-name">Alface Crespa</h3>
+                        <p class="product-description">Alface fresca e crocante para suas saladas</p>
+                        <div class="product-price">R$ 3,49 <span>/unid</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Alface Crespa" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="verduras" data-name="couve">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?w=400)" alt="Couve" loading="lazy">
+                        <span class="product-badge">Orgânico</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥬 Verduras</span>
+                        <h3 class="product-name">Couve Manteiga</h3>
+                        <p class="product-description">Couve fresca, ideal para sucos e refogados</p>
+                        <div class="product-price">R$ 2,99 <span>/maço</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Couve Manteiga" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="verduras" data-name="espinafre">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400)" alt="Espinafre" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥬 Verduras</span>
+                        <h3 class="product-name">Espinafre</h3>
+                        <p class="product-description">Rico em ferro e vitaminas</p>
+                        <div class="product-price">R$ 4,49 <span>/maço</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Espinafre" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Legumes -->
+                <div class="product-card animate-on-scroll" data-category="legumes" data-name="cenoura">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=400)" alt="Cenoura" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥕 Legumes</span>
+                        <h3 class="product-name">Cenoura</h3>
+                        <p class="product-description">Cenouras frescas e crocantes</p>
+                        <div class="product-price">R$ 4,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Cenoura" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="legumes" data-name="batata">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1518977676601-b53f82ber461?w=400)" alt="Batata" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥕 Legumes</span>
+                        <h3 class="product-name">Batata Inglesa</h3>
+                        <p class="product-description">Batatas selecionadas para todas as receitas</p>
+                        <div class="product-price">R$ 5,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Batata Inglesa" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="legumes" data-name="beterraba">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?w=400)" alt="Beterraba" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥕 Legumes</span>
+                        <h3 class="product-name">Beterraba</h3>
+                        <p class="product-description">Beterrabas frescas e nutritivas</p>
+                        <div class="product-price">R$ 6,49 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Beterraba" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hortaliças -->
+                <div class="product-card animate-on-scroll" data-category="hortalicas" data-name="tomate">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1546470427-f5cc4c4a85dd?w=400)" alt="Tomate" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🌽 Hortaliças</span>
+                        <h3 class="product-name">Tomate Italiano</h3>
+                        <p class="product-description">Tomates maduros e saborosos</p>
+                        <div class="product-price">R$ 7,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Tomate Italiano" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="hortalicas" data-name="pimentão">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=400)" alt="Pimentão" loading="lazy">
+                        <span class="product-badge">Colorido</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🌽 Hortaliças</span>
+                        <h3 class="product-name">Pimentão Colorido</h3>
+                        <p class="product-description">Mix de pimentões vermelho, amarelo e verde</p>
+                        <div class="product-price">R$ 9,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Pimentão Colorido" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Ovos -->
+                <div class="product-card animate-on-scroll" data-category="ovos" data-name="ovos caipira">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400)" alt="Ovos" loading="lazy">
+                        <span class="product-badge">Caipira</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥚 Ovos</span>
+                        <h3 class="product-name">Ovos Caipira</h3>
+                        <p class="product-description">Ovos frescos de galinhas criadas soltas</p>
+                        <div class="product-price">R$ 15,99 <span>/dúzia</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Ovos Caipira" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="ovos" data-name="ovos brancos">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=400)" alt="Ovos Brancos" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🥚 Ovos</span>
+                        <h3 class="product-name">Ovos Brancos</h3>
+                        <p class="product-description">Ovos brancos selecionados</p>
+                        <div class="product-price">R$ 12,99 <span>/dúzia</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Ovos Brancos" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Temperos -->
+                <div class="product-card animate-on-scroll" data-category="temperos" data-name="alho">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1615478503562-ec2d8aa0e24e?w=400)" alt="Alho" loading="lazy">
+                        <span class="product-badge">Aromático</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🧄 Temperos</span>
+                        <h3 class="product-name">Alho Nacional</h3>
+                        <p class="product-description">Alho fresco e aromático</p>
+                        <div class="product-price">R$ 29,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Alho Nacional" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="temperos" data-name="cebola">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=400)" alt="Cebola" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🧄 Temperos</span>
+                        <h3 class="product-name">Cebola Roxa</h3>
+                        <p class="product-description">Cebolas roxas selecionadas</p>
+                        <div class="product-price">R$ 6,99 <span>/kg</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Cebola Roxa" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="product-card animate-on-scroll" data-category="temperos" data-name="cheiro verde">
+                    <div class="product-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400)" alt="Cheiro Verde" loading="lazy">
+                        <span class="product-badge">Fresco</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">🧄 Temperos</span>
+                        <h3 class="product-name">Cheiro Verde</h3>
+                        <p class="product-description">Mix de salsinha e cebolinha fresca</p>
+                        <div class="product-price">R$ 2,49 <span>/maço</span></div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Gostaria de pedir Cheiro Verde" target="_blank" class="btn btn-whatsapp btn-sm">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="promotions" id="promocoes">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">🔥 Promoções da Semana</h2>
+                <p class="section-subtitle">Aproveite nossos preços especiais e economize ainda mais</p>
+            </div>
+            
+            <div class="promotions-grid">
+                <div class="promo-card animate-on-scroll">
+                    <div class="promo-badge">-30%</div>
+                    <div class="promo-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=400)" alt="Abacaxi" loading="lazy">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Abacaxi Pérola</h3>
+                        <div class="promo-prices">
+                            <span class="old-price">R$ 9,99</span>
+                            <span class="new-price">R$ 6,99</span>
+                        </div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Quero aproveitar a promoção de Abacaxi Pérola" target="_blank" class="btn btn-primary">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="promo-card animate-on-scroll">
+                    <div class="promo-badge">-25%</div>
+                    <div class="promo-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=400)" alt="Mamão" loading="lazy">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Mamão Papaia</h3>
+                        <div class="promo-prices">
+                            <span class="old-price">R$ 7,99</span>
+                            <span class="new-price">R$ 5,99</span>
+                        </div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Quero aproveitar a promoção de Mamão Papaia" target="_blank" class="btn btn-primary">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="promo-card animate-on-scroll">
+                    <div class="promo-badge">-40%</div>
+                    <div class="promo-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=400)" alt="Melancia" loading="lazy">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Melancia</h3>
+                        <div class="promo-prices">
+                            <span class="old-price">R$ 2,99/kg</span>
+                            <span class="new-price">R$ 1,79/kg</span>
+                        </div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Quero aproveitar a promoção de Melancia" target="_blank" class="btn btn-primary">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="promo-card animate-on-scroll">
+                    <div class="promo-badge">-20%</div>
+                    <div class="promo-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1449339827466-7441cc66ef80?w=400)" alt="Uva" loading="lazy">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Uva Itália</h3>
+                        <div class="promo-prices">
+                            <span class="old-price">R$ 14,99</span>
+                            <span class="new-price">R$ 11,99</span>
+                        </div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Quero aproveitar a promoção de Uva Itália" target="_blank" class="btn btn-primary">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="promo-card animate-on-scroll">
+                    <div class="promo-badge">-35%</div>
+                    <div class="promo-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1568702846914-96b305d2uj06?w=400)" alt="Manga" loading="lazy">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Manga Tommy</h3>
+                        <div class="promo-prices">
+                            <span class="old-price">R$ 8,99/kg</span>
+                            <span class="new-price">R$ 5,99/kg</span>
+                        </div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Quero aproveitar a promoção de Manga Tommy" target="_blank" class="btn btn-primary">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="promo-card animate-on-scroll">
+                    <div class="promo-badge">-15%</div>
+                    <div class="promo-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1595475207225-428b62bda831?w=400)" alt="Limão" loading="lazy">
+                    </div>
+                    <div class="promo-info">
+                        <h3>Limão Tahiti</h3>
+                        <div class="promo-prices">
+                            <span class="old-price">R$ 5,99/kg</span>
+                            <span class="new-price">R$ 4,99/kg</span>
+                        </div>
+                        <a href="[wa.me](https://wa.me/5588981174598?text=Olá) Quero aproveitar a promoção de Limão Tahiti" target="_blank" class="btn btn-primary">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="recipes" id="receitas">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">🍳 Receitas Saudáveis</h2>
+                <p class="section-subtitle">Aprenda a preparar delícias com nossos produtos frescos</p>
+            </div>
+            
+            <div class="recipes-grid">
+                <div class="recipe-card animate-on-scroll">
+                    <div class="recipe-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=400)" alt="Salada de Frutas" loading="lazy">
+                        <span class="recipe-time">⏱️ 15 min</span>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Salada de Frutas Tropical</h3>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h4>Ingredientes:</h4>
+                                <ul>
+                                    <li>1 manga picada</li>
+                                    <li>1 xícara de morango</li>
+                                    <li>2 bananas</li>
+                                    <li>1 maçã</li>
+                                    <li>Suco de 1 laranja</li>
+                                    <li>Mel a gosto</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h4>Modo de Preparo:</h4>
+                                <p>Pique todas as frutas em cubos. Misture em uma tigela, adicione o suco de laranja e o mel. Sirva gelado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card animate-on-scroll">
+                    <div class="recipe-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400)" alt="Vitamina" loading="lazy">
+                        <span class="recipe-time">⏱️ 5 min</span>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Vitamina Energética</h3>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h4>Ingredientes:</h4>
+                                <ul>
+                                    <li>2 bananas maduras</li>
+                                    <li>1 copo de leite</li>
+                                    <li>2 colheres de aveia</li>
+                                    <li>1 colher de mel</li>
+                                    <li>Canela a gosto</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h4>Modo de Preparo:</h4>
+                                <p>Bata todos os ingredientes no liquidificador até ficar homogêneo. Sirva imediatamente com gelo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card animate-on-scroll">
+                    <div class="recipe-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400)" alt="Suco Detox" loading="lazy">
+                        <span class="recipe-time">⏱️ 10 min</span>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Suco Detox Verde</h3>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h4>Ingredientes:</h4>
+                                <ul>
+                                    <li>3 folhas de couve</li>
+                                    <li>1 maçã verde</li>
+                                    <li>Suco de 2 limões</li>
+                                    <li>1 pedaço de gengibre</li>
+                                    <li>200ml de água de coco</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h4>Modo de Preparo:</h4>
+                                <p>Bata todos os ingredientes no liquidificador. Coe se preferir e sirva com gelo. Ideal para começar o dia!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card animate-on-scroll">
+                    <div class="recipe-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400)" alt="Salada Tropical" loading="lazy">
+                        <span class="recipe-time">⏱️ 20 min</span>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Salada Tropical</h3>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h4>Ingredientes:</h4>
+                                <ul>
+                                    <li>Mix de folhas verdes</li>
+                                    <li>1 manga em cubos</li>
+                                    <li>Tomate cereja</li>
+                                    <li>Queijo branco</li>
+                                    <li>Azeite e limão</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h4>Modo de Preparo:</h4>
+                                <p>Monte as folhas no prato, adicione a manga, tomates e queijo. Tempere com azeite, limão, sal e pimenta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card animate-on-scroll">
+                    <div class="recipe-image">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400)" alt="Sopa de Legumes" loading="lazy">
+                        <span class="recipe-time">⏱️ 40 min</span>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Sopa de Legumes</h3>
+                        <div class="recipe-details">
+                            <div class="recipe-section">
+                                <h4>Ingredientes:</h4>
+                                <ul>
+                                    <li>2 cenouras</li>
+                                    <li>2 batatas</li>
+                                    <li>1 abobrinha</li>
+                                    <li>1 cebola</li>
+                                    <li>Temperos a gosto</li>
+                                </ul>
+                            </div>
+                            <div class="recipe-section">
+                                <h4>Modo de Preparo:</h4>
+                                <p>Refogue a cebola, adicione os legumes picados e cubra com água. Cozinhe até ficarem macios. Tempere e sirva quente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips" id="dicas">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">💡 Dicas Úteis</h2>
+                <p class="section-subtitle">Aprenda a conservar melhor seus alimentos e evitar desperdícios</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">🍎</div>
+                    <h3>Como Conservar Frutas</h3>
+                    <p>Guarde frutas maduras na geladeira e as verdes em temperatura ambiente. Bananas liberam gás etileno, que amadurece outras frutas – mantenha-as separadas se não quiser acelerar o processo.</p>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">🥬</div>
+                    <h3>Como Escolher Verduras</h3>
+                    <p>Observe a cor e a textura das folhas: devem estar vibrantes, firmes e sem manchas escuras. Evite folhas murchas ou amareladas. O talo deve estar firme e úmido.</p>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">🥕</div>
+                    <h3>Como Armazenar Legumes</h3>
+                    <p>Legumes como cenoura e beterraba duram mais na gaveta da geladeira. Batatas e cebolas preferem locais frescos e escuros. Nunca guarde tomates na geladeira!</p>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">🌟</div>
+                    <h3>Benefícios das Frutas</h3>
+                    <p>Consumir frutas diariamente fortalece o sistema imunológico, melhora a digestão, hidrata o corpo e fornece vitaminas essenciais. Inclua pelo menos 3 porções por dia!</p>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">♻️</div>
+                    <h3>Evite Desperdícios</h3>
+                    <p>Planeje suas compras, congele o que não usar imediatamente e aproveite talos e cascas em sopas e sucos. Pequenas atitudes fazem grande diferença!</p>
+                </div>
+                
+                <div class="tip-card animate-on-scroll">
+                    <div class="tip-icon">🧊</div>
+                    <h3>Congelamento Correto</h3>
+                    <p>Branqueie vegetais antes de congelar para preservar cor e nutrientes. Frutas podem ser congeladas em pedaços para smoothies. Use dentro de 3 meses para melhor qualidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivational Quotes Section -->
+    <section class="quotes" id="frases">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">✨ Frases Motivacionais</h2>
+                <p class="section-subtitle">Inspiração para uma vida mais saudável</p>
+            </div>
+            
+            <div class="quotes-carousel">
+                <div class="quote-container">
+                    <div class="quote-card active">
+                        <span class="quote-icon">🌱</span>
+                        <p class="quote-text">"Quem planta dedicação colhe sucesso."</p>
+                    </div>
+                    <div class="quote-card">
+                        <span class="quote-icon">❤️</span>
+                        <p class="quote-text">"A saúde começa pela alimentação."</p>
+                    </div>
+                    <div class="quote-card">
+                        <span class="quote-icon">🍎</span>
+                        <p class="quote-text">"Frutas frescas transformam vidas."</p>
+                    </div>
+                    <div class="quote-card">
+                        <span class="quote-icon">☀️</span>
+                        <p class="quote-text">"Cada novo dia é uma oportunidade para cuidar de você."</p>
+                    </div>
+                    <div class="quote-card">
+                        <span class="quote-icon">💰</span>
+                        <p class="quote-text">"Alimentação saudável é investimento, não gasto."</p>
+                    </div>
+                    <div class="quote-card">
+                        <span class="quote-icon">🛒</span>
+                        <p class="quote-text">"As melhores escolhas começam pela feira."</p>
+                    </div>
+                </div>
+                <div class="quote-indicators">
+                    <button class="quote-indicator active" data-quote="0"></button>
+                    <button class="quote-indicator" data-quote="1"></button>
+                    <button class="quote-indicator" data-quote="2"></button>
+                    <button class="quote-indicator" data-quote="3"></button>
+                    <button class="quote-indicator" data-quote="4"></button>
+                    <button class="quote-indicator" data-quote="5"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content animate-on-scroll">
+                <div class="about-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600)" alt="Nossa Loja" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p>A <strong>Hortifruti O Josineles</strong> trabalha diariamente oferecendo frutas, verduras e legumes frescos, cuidadosamente selecionados para garantir qualidade, sabor e economia.</p>
+                    <p>Nosso compromisso é levar saúde, confiança e satisfação para nossos clientes através de um atendimento de excelência.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Produtos selecionados diariamente</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Preços justos e competitivos</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Atendimento personalizado</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Entrega rápida e segura</span>
+                        </div>
+                    </div>
+                    <a href="[wa.me](https://wa.me/5588981174598)" target="_blank" class="btn btn-primary">
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content animate-on-scroll">
+                <div class="newsletter-text">
+                    <h2>📧 Receba Nossas Promoções</h2>
+                    <p>Cadastre-se e seja o primeiro a saber das ofertas especiais!</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Seu melhor e-mail" required class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">📞 Entre em Contato</h2>
+                <p class="section-subtitle">Estamos prontos para atendê-lo</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telefone</h3>
+                        <p>(88) 98117-4598</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="[wa.me](https://wa.me/5588981174598)" target="_blank">(88) 98117-4598</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>E-mail</h3>
+                        <p>contato@hortifrutiojosineles.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Endereço</h3>
+                        <p>Rua Principal, 123 - Centro<br>Sua Cidade - CE</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">🕒</div>
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sábado: 6h às 18h<br>Domingo: 6h às 12h</p>
+                    </div>
+                </div>
+                
+                <div class="contact-map animate-on-scroll">
+                    <iframe 
+                        src="[google.com](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.330746263948!2d-38.52667668523456!3d-3.7318115971813896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwNDMnNTQuNSJTIDM4wrAzMSczNC4xIlc!5e0!3m2!1spt-BR!2sbr!4v1635000000000!5m2!1spt-BR!2sbr)" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 16px;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Localização Hortifruti O Josineles">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🍎</span>
+                        <div class="logo-text">
+                            <span class="logo-name">HORTIFRUTI</span>
+                            <span class="logo-subtitle">O JOSINELES</span>
+                        </div>
+                    </div>
+                    <p>Frutas, verduras e legumes frescos todos os dias para sua família.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#receitas">Receitas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>📞 (88) 98117-4598</p>
+                    <p>📧 contato@hortifrutiojosineles.com</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="[wa.me](https://wa.me/5588981174598)" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Hortifruti O Josineles. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="[wa.me](https://wa.me/5588981174598)" target="_blank" class="whatsapp-float" aria-label="Contato WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="whatsapp-tooltip">Faça seu pedido!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
